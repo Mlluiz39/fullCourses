@@ -3,13 +3,13 @@
 ## npm / yarn init
 Inicia o package.json
 
-## npm / yarn install express --save
+## npm install / yarn add express --save
 instalar o express
 
 ## Abrir o package.json
 Configurar um scripts no package com "start": node index.js
 
-## npm / yarn start
+## npm start / yarn start
 Iniciar o servidor
 
 ## npm install nodemon -D / yarn add nodemon -D
