@@ -1,0 +1,27 @@
+{
+  "name": "course-advanced-git",
+  "version": "1.0.0",
+  "description": "curso de git no canal do manguinho",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "y": "^0.3.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mlluiz39/course-advanced-git.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mlluiz39/course-advanced-git/issues"
+  },
+  "homepage": "https://github.com/Mlluiz39/course-advanced-git#readme",
+  "devDependencies": {
+    "git-commit-msg-linter": "^3.2.8"
+  }
+}

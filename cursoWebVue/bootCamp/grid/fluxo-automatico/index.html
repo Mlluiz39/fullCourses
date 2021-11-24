@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Grid Layout</title>
+  <style>
+    body {
+      background-color: #4634e6;
+      height: 100vh;
+      overflow-y: hidden;
+      margin: 2rem;
+      font-family: sans-serif;
+    }
+
+    .container {
+      display: grid;
+      grid-gap: 1rem;
+      grid-auto-flow: column;  /* aqui alteramos de row que é o padrão para column */
+     
+    }
+
+    .item {
+      background-color: rgba(255, 255, 255, 0.6);
+      border-radius: 5px;
+      height: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+  </div>
+  
+</body>
+</html>

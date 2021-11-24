@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+body {
+  background-color:  #F3F5F7;
+  overflow-x: hidden;
+}
+
+:root {
+  --blue: #3EA1DB;
+  --blue-dark: #574AE8;
+  --white: #FFF;
+  --title: #313131;
+  --text: #B6B6B6;
+  --linear: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%); 
+}
+
+.container {
+  width: 100vw;
+  background: var(--linear);
+  margin-bottom: 4.688rem;
+}
+
+.blog-nav {
+  width: 100%;
+  height: 15.625rem;
+  max-width: 62rem;
+  margin: 0 auto;
+}
+
+.blog-nav__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blog-nav__title h1, h2 {
+  font-size: 1.5rem;
+  color: var(--white);
+  margin-top: 2.563rem;
+}
+
+.blog-nav-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog-nav-input input {
+  width: 100%;
+  height: 4.063rem;
+  cursor: pointer;
+}
+
+.blog-nav-input input::placeholder {
+  color: var(--white);
+  opacity: 0.5;
+  padding-left:0.938rem; 
+}
+
+#search {
+  background-image: url("./images/Vector.svg");
+  background-color: rgba(255, 255, 255, 0.1);
+  background-repeat: no-repeat;
+  background-position: 1rem;
+  margin: 3rem 0 2rem 0;
+  padding: 1rem 3.5rem;
+  border: none;
+  border-radius: 0.25rem;
+  outline: none;
+  color: var(--white);
+  opacity: 0.5;
+}
+
+.container-section {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.container-section-article {
+  max-width: 62rem;
+  width: 100%;
+  margin:2.063rem auto;
+  height: 15.625rem;
+  padding: 2.188rem;
+  background-color: var(--white);
+  box-shadow: 0px 0px 0.625rem rgba(19, 19, 31, 0.05);
+  border-radius: 0.313rem; 
+}
+
+.container-section-article__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+
+.container-section-article__h3 {
+  font-size: 1.625rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 2rem;
+  color: var(--title);
+  margin-bottom: 0.932rem;
+}
+
+.container-section-article__p {
+ color: var(--text);
+}
+
+@media (max-widt: 600px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    
+  }
+}
+
+
+
+
