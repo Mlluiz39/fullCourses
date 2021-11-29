@@ -1,30 +1,37 @@
-import React, { useState } from "react";
+import React, { useState } from 'react'
+import useGithub from '../../hooks/github-hooks'
+import { FiSearch } from 'react-icons/fi'
 import * as S from "./styled";
-import useGithub from "../../hooks/github-hooks";
 
 const Header = () => {
-  const { getUser } = useGithub();
-  const [usernameForSearch, setUsernameForSearch] = useState();
+  const { getUser } = useGithub()
+  const [usernameForSearch, setUsernameForSearch] = useState()
 
   const submitGetUser = () => {
-    if (!usernameForSearch) return;
-    return getUser(usernameForSearch);
-  };
+    if (!usernameForSearch) return
+    return getUser(usernameForSearch)
+  }
 
   return (
-    <header>
-      <S.Wrapper>
-        <input
-          type="text"
-          placeholder="Digite o username para pesquisa..."
-          onChange={(event) => setUsernameForSearch(event.target.value)}
-        />
-        <button type="submit" onClick={submitGetUser}>
-          <span>Buscar</span>
-        </button>
-      </S.Wrapper>
-    </header>
-  );
-};
+    <S.Wrapper>
+      <S.HeaderSection>
+        <S.HeaderTitle>Github Profile</S.HeaderTitle>
+        <S.HeaderInputContainer>
+          <S.HeaderInput
+            type="text"
+            placeholder="digite o username..."
+            onChange={event => setUsernameForSearch(event.target.value)}
+          />
 
-export default Header;
+          <S.HeaderSearchButton>
+            <button type="submit" onClick={submitGetUser}>
+              <FiSearch size={15} />
+            </button>
+          </S.HeaderSearchButton>
+        </S.HeaderInputContainer>
+      </S.HeaderSection>
+    </S.Wrapper>
+  )
+}
+
+export default Header

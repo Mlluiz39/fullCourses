@@ -2,33 +2,78 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   display: flex;
-  width: 100%;
-  justify-content: space-between;
-  padding: 4px;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+`
 
-  input {
-    border: 1px solid #ccc;
-    border-radius: 8px;
+export const HeaderSection = styled.header`
+    width: 580px;
+    height: 130px;
+    background-color: rgba(255,255,255, .2);
+    border: 1px solid #000;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+
+    @media (max-width: 360px) {
+    width: 95%;
+  }
+`
+
+export const HeaderTitle = styled.h1`
+    margin: 0;
+    padding: 15px 0;
+    color: #E5E5E5;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
     width: 100%;
-    height: 44px;
-    padding: 8px;
-    font-weight: 500;
+`
+
+export const HeaderInputContainer = styled.div`
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`
+
+export const HeaderInput = styled.input`
+    width: 400px;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    padding: 0 16px;
+    background-color: #fff;
+    color: #444;
+    transition: .4s ease;
+    &:focus {
+        outline: none;
+        width: 90%;
+        transition: .6s ease;
+    }
+
+    @media (max-width: 360px) {
+    width: 95%;
   }
+`
 
-  button {
-    background-color: #225ed8;
-    padding: 8px 16px;
-    margin: 0 16px;
-    border-radius: 8px;
-
+export const HeaderSearchButton = styled.button`
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    background: #FF7A00;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    transition: ease .3s;
     &:hover {
-      background-color: #2c5282;
-      box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.2);
+        transform: scale(1.05);
+        transition: ease .3s;
+        cursor: pointer;
     }
-
-    span {
-      font-weight: bold;
-      color: #ffff;
-    }
-  }
-`;
+`

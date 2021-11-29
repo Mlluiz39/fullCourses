@@ -8,22 +8,33 @@ export const WrapperTabs = styled(Tabs)`
 `;
 
 export const WrapperTabList = styled(TabList)`
+  display: flex;
+  justify-content: center;
   list-style-type: none;
-  padding: 4px;
   display: flex;
   margin: 0;
+
+  @media (max-width: 360px){
+    width: 95%;
+    margin: 0 auto;
+  }
 `;
 WrapperTabList.tabsRole = "TabList";
 
 export const WrapperTab = styled(Tab)`
-  border-radius: 16px;
-  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 285px;
   padding: 16px;
   user-select: none;
   cursor: pointer;
   z-index: 99999;
-  background-color: "#fff";
+  background-color: #5d5b59;
   margin: 8px;
+  color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 16px;
 
   &:focus {
     outline: none;

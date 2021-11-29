@@ -6,6 +6,7 @@ const Profile = () => {
   const { githubState } = useGithub();
 
   return (
+    <S.WrapperContainer>
     <S.Wrapper>
       <S.WrapperImage src={githubState.user.avatar} alt="Avatar of user" />
       <S.WrapperInfoUser>
@@ -56,6 +57,7 @@ const Profile = () => {
         </S.WrapperStatusCount>
       </S.WrapperInfoUser>
     </S.Wrapper>
+    </S.WrapperContainer>
   );
 };
 
