@@ -9,8 +9,6 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-
-
 a {
   text-decoration: none;
 }
@@ -69,6 +67,7 @@ button {
   line-height: 18px;
   color: #ffffff;
 }
+
 .link-signup {
   display: block;
   text-align: center;
@@ -106,8 +105,41 @@ strong {
   margin: 0 16px;
 }
 
+.yoga-image {
+  display: block;
+  text-align: center;
+  margin-top: 142px;
+  margin-bottom: 104px;
+}
+
+.yoga-circles {
+  text-align: center;
+}
+
+.paragraph-yoga {
+  text-align: center;
+  margin-top: 81px;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #000;
+}
+
+.button-yoga {
+  margin: 0 auto;
+  margin-top: 115px;
+  margin-bottom: 121px;
+  width: 173px;
+  height: 46px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
 @media (min-width: 760px) {
-  .container   {
+  .container {
     width: 414px;
     height: 896px;
     background-color: #ffffff;
@@ -122,6 +154,4 @@ strong {
     width: 100%;
     height: 81%;
   }
-
-  
 }
