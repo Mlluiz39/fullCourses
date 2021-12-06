@@ -23,6 +23,7 @@ input {
   width: 321px;
   height: 46px;
   margin: 0 auto;
+  padding-left: 19px;
   background: #f7f7f7;
   border: none;
   box-shadow: -4px 4px 18px rgb(0 0 0 / 9%);
@@ -30,7 +31,6 @@ input {
 }
 
 input::placeholder {
-  padding-left: 19px;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
@@ -53,7 +53,7 @@ input::placeholder {
   color: #000000;
 }
 
-button {
+#button {
   display: block;
   margin: 0 auto;
   background: #323232;
@@ -108,17 +108,17 @@ strong {
 .yoga-image {
   display: block;
   text-align: center;
-  margin-top: 142px;
-  margin-bottom: 104px;
+  margin: 142px auto 104px auto;
 }
 
 .yoga-circles {
+  margin: 55px 0;
   text-align: center;
 }
 
 .paragraph-yoga {
   text-align: center;
-  margin-top: 81px;
+  margin: 40px 0;
   font-size: 24px;
   line-height: 28px;
   font-weight: 400;
@@ -126,15 +126,15 @@ strong {
 }
 
 .button-yoga {
-  margin: 0 auto;
-  margin-top: 115px;
-  margin-bottom: 121px;
+  display: block;
+  margin: 40px auto 121px auto;
   width: 173px;
   height: 46px;
-  font-style: normal;
-  font-weight: normal;
   font-size: 15px;
   line-height: 18px;
+  background: #323232;
+  box-shadow: -4px 4px 18px rgb(0 0 0 / 9%);
+  border-radius: 10px;
   color: #ffffff;
 }
 
