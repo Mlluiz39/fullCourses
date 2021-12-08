@@ -6,8 +6,10 @@
 
 :root {
   --color-green: #04c35c;
+  --color-green-light: #6bce8c;
   --color-blue: #2b6cb0;
   --color-black: #1a202c;
+  --color-black-light: #344157;
   --color-gray: #f7fafc;
   --color-ice: #e8e8e8;
   --color-white: #ffffff;
@@ -44,7 +46,6 @@ body {
   height: 902px;
   position: absolute;
   top: 0;
-  
 }
 
 .paragraph-login {
@@ -89,7 +90,7 @@ label {
   height: 50px;
   margin: 11px 0;
   margin-left: 193px;
-  padding: 17px 190px 16px 20px;
+  padding-left: 10px;
 }
 
 input::placeholder {
@@ -127,10 +128,14 @@ input::placeholder {
   color: var(--color-blue);
 }
 
+button {
+  cursor: pointer;
+}
+
 .button-login {
   display: block;
   margin: 0 auto;
-  background: var(--color-green);
+  background: var(--color-green-light);
   border-radius: 5px;
   width: 347px;
   height: 50px;
@@ -144,13 +149,18 @@ input::placeholder {
   color: var(--color-white);
 }
 
+.button-login:hover {
+  background-color: var(--color-green);
+  color: var(--color-white);
+}
+
 .register-button {
   display: block;
   width: 347px;
   height: 50px;
   margin: 0 auto;
   margin-top: 15px;
-  background-color: var(--color-black);
+  background-color: var(--color-black-light);
   border-radius: 5px;
   color: var(--color-white);
   font-family: Lato;
@@ -159,6 +169,11 @@ input::placeholder {
   font-size: 16px;
   line-height: 19px;
   border: none;
+}
+
+.register-button:hover {
+  background-color: var(--color-black);
+  color: var(--color-white);
 }
 
 .register-button img {
@@ -192,10 +207,6 @@ input::placeholder {
 }
 
 @media (max-width: 768px) {
- 
-  body {
-    overflow-y: hidden;
-  }
   .content-image {
     display: none;
   }
@@ -234,16 +245,13 @@ input::placeholder {
   }
 
   .remember-me {
+    width: 100%;
     margin-left: 32px;
     margin-top: 28px;
   }
 
-  .remember-me span {
-    margin-left: 11px;
-  }
-
   .remember-me a {
-    margin-left: 94px;
+    margin-left: 81px;
     margin-right: 38px;
   }
 
