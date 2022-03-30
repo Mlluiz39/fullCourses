@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Css Grid Layout</title>
+  <style>
+    body {
+      background-color: #98b3ff;
+      height: 100vh;
+      margin: 2rem;
+      font-family: sans-serif;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* usando essas propriedades chegamos ao mesmo resultado do midia queries*/
+      grid-auto-rows: 200px;
+      grid-gap: 1rem;
+     
+    }
+
+    .item {
+      background-color: #fff;
+      border-radius: 5px;
+      height: 150px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+  </div>
+  
+</body>
+</html>
