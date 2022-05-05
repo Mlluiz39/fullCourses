@@ -26,19 +26,21 @@ header {
 
 .hero-section h4 {
   font-size: 1.4rem;
-  color: var(--primary-color)
+  color: var(--primary-color);
 }
 
 .hero-section h1 {
   font-size: 3.4rem;
   color: var(--headline);
+  
   margin-top: 1.6rem;
 }
 
 .hero-section p {
   font-size: 1.8rem;
-  Line-height: 150%;
-  color:  var(--gray-paragraph);
+  line-height: 150%;
+  color: var(--gray-paragraph);
+
   margin-top: 2.4rem;
   margin-bottom: 3.2rem;
 }
@@ -65,4 +67,12 @@ header {
 
   margin-left: auto;
   margin-right: auto;
+}
+
+.hero-section button:hover {
+  opacity: 0.8;
+}
+
+.hero-section button:active {
+  opacity: 0.5;
 }
