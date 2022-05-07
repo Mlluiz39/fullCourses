@@ -7,9 +7,16 @@
 :root {
   font-size: 62.5%;
   --white-color: #fff;
-  --primary-color: #00856f;
   --headline: #212529;
   --gray-paragraph: #495057;
+  --brand-beige: #fffaf1
+  --brand-light: #dce9e3;
+
+  --color-purple: #bb57ac;
+  --color-blue: #38adc4;
+  --color-black: #000;
+  --color-yellow: #ece18c;
+  --color-blue-white: #BDFEFF;
 }
 
 body {
@@ -24,15 +31,47 @@ header {
   margin-top: 4rem;
 }
 
+main {
+  width: 375px;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* padding: 1.6rem 2.4rem; */
+
+  position: fixed;
+  top: 0;
+  left: 50%;
+
+  transform: translateX(-50%);
+}
+
+header::before {
+  content: "";
+  width: 100vw;
+  height: 108rem;
+  background-color: var(--color-blue-white);
+  display: block;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
 .hero-section h4 {
   font-size: 1.4rem;
-  color: var(--primary-color);
+  color: var(--color-purple);
 }
 
 .hero-section h1 {
   font-size: 3.4rem;
   color: var(--headline);
-  
+
   margin-top: 1.6rem;
 }
 
@@ -46,7 +85,7 @@ header {
 }
 
 .hero-section button {
-  background-color: var(--primary-color);
+  background-color: var(--color-purple);
   color: var(--white-color);
   font-size: 1.4rem;
   font-weight: 700;
@@ -75,4 +114,43 @@ header {
 
 .hero-section button:active {
   opacity: 0.5;
+}
+
+.hero-section img {
+  width: 26.4rem;
+  height: 34.2rem;
+
+  display: block;
+  margin-inline: auto;
+  object-position: 0 3.9rem;
+}
+
+.stats {
+  width: 32.7rem;
+  padding-block: 4rem;
+  margin-inline: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6rem;
+
+  border: 1px solid var(--brand-light);
+  border-radius: .6rem;
+  background-color: var(--color-yellow);
+}
+
+.stat h3 {
+  font-size: 4.8rem;
+  line-height: 130%;
+  color: var(--headline);
+
+  margin-bottom: 0.4rem;
+}
+
+.stat p {
+  margin: 0;
+  line-height: 150%;
+
+  color: var(--color-purple);
 }
