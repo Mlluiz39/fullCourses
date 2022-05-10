@@ -31,23 +31,12 @@ header {
   margin-top: 4rem;
 }
 
-main {
-  width: 375px;
-  margin: 0 auto;
-}
-
 nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 
-  /* padding: 1.6rem 2.4rem; */
-
-  position: fixed;
-  top: 0;
-  left: 50%;
-
-  transform: translateX(-50%);
+  
 }
 
 header::before {
