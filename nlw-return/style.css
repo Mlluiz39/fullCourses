@@ -11,8 +11,7 @@
   --white-color: #fff;
   --headline: #212529;
   --gray-paragraph: #495057;
-  --brand-beige: #fffaf1
-  --brand-light: #dce9e3;
+  --brand-beige: #fffaf1 --brand-light: #dce9e3;
 
   --color-purple: #bb57ac;
   --color-blue: #38adc4;
@@ -23,7 +22,7 @@
   --nav-height: 7.2rem;
 }
 
-html, 
+html,
 body {
   width: 100%;
   height: 100%;
@@ -35,14 +34,12 @@ body {
   text-align: center;
 }
 
-body.menu-expanded .menu {
-  
-}
+body.menu-expanded .menu {}
 
 .wrapper {
   width: 37.5rem;
   margin-inline: auto;
-  padding-inline: 2.4rem ;
+  padding-inline: 2.4rem;
 }
 
 nav {
@@ -57,9 +54,9 @@ nav {
 }
 
 nav .wrapper {
-display: flex;
-align-items: center;
-justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 nav.scroll {
