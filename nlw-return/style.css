@@ -2,6 +2,8 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+
+  list-style: none;
 }
 
 :root {
@@ -21,20 +23,26 @@
   --nav-height: 7.2rem;
 }
 
+html, 
+body {
+  width: 100%;
+  height: 100%;
+}
+
 body {
   font-family: 'DM Sans', sans-serif;
   font-size: 1.6rem;
   text-align: center;
 }
 
+body.menu-expanded .menu {
+  
+}
+
 .wrapper {
   width: 37.5rem;
   margin-inline: auto;
   padding-inline: 2.4rem ;
-}
-
-header {
-  margin-top: calc(4.1rem + var(--nav-height));
 }
 
 nav {
@@ -67,9 +75,13 @@ nav.scroll svg:nth-child(2) path {
   stroke: #fff;
 }
 
+header {
+  margin-top: calc(4.1rem + var(--nav-height));
+}
+
 header::before {
   content: "";
-  width: 100vw;
+  width: 100%;
   height: calc(108rem + var(--nav-height));
   background-color: var(--color-blue-white);
   display: block;
