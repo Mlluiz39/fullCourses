@@ -187,7 +187,7 @@ body.menu-expanded button path {
 }
 
 header {
-  margin-top: calc(4.1rem + var(--nav-height));
+  padding-top: calc(4.1rem + var(--nav-height));
 }
 
 header::before {
@@ -315,6 +315,7 @@ header::before {
   text-transform: uppercase;
 
   margin-bottom: 1.6rem;
+  padding-top: 4rem;
 }
 
 #services .cards {

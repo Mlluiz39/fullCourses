@@ -1,8 +1,7 @@
 const navigation = document.querySelector('[data-js="navigation"]')
 const body = document.querySelector('body')
-const openNavigation = document.querySelector('[data-js="open-navigation"]')
-const closeNavigation = document.querySelector('[data-js="close-navigation"]')
-
+const openMenu = document.querySelector('[data-js="open-navigation"]')
+const closeMenu = document.querySelector('[data-js="close-navigation"]')
 const home = document.querySelector('[data-js="home"]')
 const services = document.querySelector('[data-js="services"]')
 const about = document.querySelector('[data-js="about"]')
@@ -13,10 +12,24 @@ document.addEventListener('scroll', () => {
     : navigation.classList.remove('scroll')
 })
 
-openNavigation.addEventListener('click', () => {
+openMenu.addEventListener('click', () => {
   body.classList.add('menu-expanded')
 })
 
-closeNavigation.addEventListener('click', () => {
-  body.classList.remove('menu-expanded')
-})
+const clickToCloseMenu = (...args) => {
+  closeMenu.addEventListener('click', () => {
+    body.classList.remove('menu-expanded')
+  })
+  home.addEventListener('click', () => {
+    body.classList.remove('menu-expanded')
+  })
+  services.addEventListener('click', () => {
+    body.classList.remove('menu-expanded')
+  })
+  about.addEventListener('click', () => {
+    body.classList.remove('menu-expanded')
+  })
+}
+
+clickToCloseMenu(closeMenu, home, about)
+
