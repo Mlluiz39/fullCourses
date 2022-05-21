@@ -32,3 +32,21 @@ const clickToCloseMenu = (...args) => {
 }
 
 clickToCloseMenu(closeMenu, home, services, about)
+
+ScrollReveal({
+  origin: 'top',
+  distance: '30px',
+  duration: 700,
+}).reveal(
+  `
+#home,
+#home img, 
+#home .stats, 
+#services,
+#services header,
+#services .card,
+#about,
+#about .header,
+#about .content,`,
+  { delay: 300 }
+)
