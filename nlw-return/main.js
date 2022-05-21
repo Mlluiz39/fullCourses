@@ -32,4 +32,3 @@ const clickToCloseMenu = (...args) => {
 }
 
 clickToCloseMenu(closeMenu, home, about)
-
