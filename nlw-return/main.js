@@ -16,7 +16,7 @@ openMenu.addEventListener('click', () => {
   body.classList.add('menu-expanded')
 })
 
-const clickToCloseMenu = (...args) => {
+const clickToCloseMenu = (value) => {
   closeMenu.addEventListener('click', () => {
     body.classList.remove('menu-expanded')
   })
@@ -30,8 +30,9 @@ const clickToCloseMenu = (...args) => {
     body.classList.remove('menu-expanded')
   })
 }
+clickToCloseMenuItems = { closeMenu, home, services, about }
 
-clickToCloseMenu(closeMenu, home, services, about)
+clickToCloseMenu(clickToCloseMenuItems)
 
 ScrollReveal({
   origin: 'top',
